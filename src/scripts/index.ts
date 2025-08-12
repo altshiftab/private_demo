@@ -8,4 +8,4 @@ import "@altshiftab/web_components/header"
 import "../styles/index.css";
 
 addErrorEventListeners();
-refreshSession(new URL("https://login.alt-shift.se/api/refresh-session-token"), new URL("https://login.alt-shift.se/"));
+refreshSession(new URL("https://login.alt-shift.se/api/session/refresh"), {method: "POST"}, new URL("https://login.alt-shift.se/"));
